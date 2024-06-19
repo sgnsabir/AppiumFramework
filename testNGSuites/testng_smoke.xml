@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="Smoke"/>
+</run>
+</groups>
+
+	<listeners>
+		<listener class-name="testautomation.testUtils.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Test on Mobile Browser">
+		<classes>
+			<class name="testautomation.MobileBrowserTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+			<class name="testautomation.eCommerce_tc_1" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Data Provider in test">
+		<classes>
+			<class name="testautomation.eCommerce_E2E_tc2" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="End to end Framework Test">
+		<classes>
+			<class name="testautomation.eCommerce_E2E_tc" />
+		</classes>
+	</test>
+
+
+
+</suite> <!-- Suite -->

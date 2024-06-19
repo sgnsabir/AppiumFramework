@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>testautomation</groupId>
+	<artifactId>AppiumFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>AppiumFramework</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.16.1</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.17.1</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>4.21.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>9.2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- mvn test -PProfileName-->
+	<!-- mvn test -PProfileName -Dbrowser=Firefox -->
+	<!-- mvn test -PProfileName -DipAddress=127.0.0.1 -->
+	<!-- mvn test -PProfileName -DdeviceName=Emulator -->
+	<profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testNGSuites/testng.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
+		<profile>
+			<id>Smoke</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testNGSuites/testng_smoke.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
+
+	</profiles>
+
+
+</project>

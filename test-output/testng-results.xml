@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="10" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-19T18:42:47 CEST" name="Suite" finished-at="2024-06-19T18:43:52 CEST" duration-ms="65339">
+    <groups>
+      <group name="Smoke">
+        <method signature="eCommerce_E2E_tc2.fillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" name="fillForm_PositiveFlow" class="testautomation.eCommerce_E2E_tc2"/>
+        <method signature="eCommerce_E2E_tc2.totalAmountMatching()[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" name="totalAmountMatching" class="testautomation.eCommerce_E2E_tc2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-06-19T18:42:47 CEST" name="Test on Mobile Browser" finished-at="2024-06-19T18:42:47 CEST" duration-ms="7">
+    </test> <!-- Test on Mobile Browser -->
+    <test started-at="2024-06-19T18:42:47 CEST" name="Error Validation Test" finished-at="2024-06-19T18:42:47 CEST" duration-ms="2">
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-06-19T18:42:47 CEST" name="Data Provider in test" finished-at="2024-06-19T18:43:52 CEST" duration-ms="65120">
+      <class name="testautomation.eCommerce_E2E_tc2">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" started-at="2024-06-19T18:42:47 CEST" name="configureAppium" finished-at="2024-06-19T18:42:55 CEST" duration-ms="7548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="fillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" started-at="2024-06-19T18:42:55 CEST" name="fillForm_PositiveFlow" data-provider="getData" finished-at="2024-06-19T18:43:10 CEST" duration-ms="15392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm_PositiveFlow -->
+        <test-method signature="fillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" started-at="2024-06-19T18:43:10 CEST" name="fillForm_PositiveFlow" data-provider="getData" finished-at="2024-06-19T18:43:33 CEST" duration-ms="22586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brazil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm_PositiveFlow -->
+        <test-method signature="totalAmountMatching()[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" started-at="2024-06-19T18:43:33 CEST" name="totalAmountMatching" finished-at="2024-06-19T18:43:52 CEST" duration-ms="19165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalAmountMatching -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testautomation.eCommerce_E2E_tc2@6b695b06]" started-at="2024-06-19T18:43:52 CEST" name="tearDown" finished-at="2024-06-19T18:43:52 CEST" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testautomation.eCommerce_E2E_tc2 -->
+    </test> <!-- Data Provider in test -->
+    <test started-at="2024-06-19T18:43:52 CEST" name="End to end Framework Test" finished-at="2024-06-19T18:43:52 CEST" duration-ms="0">
+    </test> <!-- End to end Framework Test -->
+  </suite> <!-- Suite -->
+</testng-results>
